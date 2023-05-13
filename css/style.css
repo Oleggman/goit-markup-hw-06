@@ -455,11 +455,57 @@ img {
 
 .footer .socials {
   gap: 16px;
+  margin-right: 80px;
 }
 
 .footer .socials-link:hover,
 .footer .socials-link:focus {
   background-color: var(--footer-accent-color);
+}
+
+.subscription-area {
+  display: flex;
+  gap: 24px;
+}
+
+.subscription-form-label,
+.subscription-form-input {
+  width: 264px;
+  height: 40px;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+}
+
+.subscription-form-input {
+  background-color: transparent;
+  padding-left: 16px;
+
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscription-form-input::placeholder {
+  color: var(--white-color);
+}
+
+.subscription-form-input:focus-within {
+  outline: none;
+}
+
+.footer-submit-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+
+  background-color: var(--main-bg-btn-cl);
+
+  border: none;
+  border-radius: 4px;
 }
 
 /**
