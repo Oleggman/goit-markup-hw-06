@@ -497,7 +497,9 @@ img {
   color: var(--white-color);
 }
 
-.subscription-form-input:focus-within {
+.subscription-form-input:focus-within,
+.modal-form-input:focus-within,
+.modal-form-field .message-input:focus-within {
   outline: none;
 }
 
@@ -623,10 +625,6 @@ img {
   transition: border-color var(--anim-time) var(--anim-timing-func);
 }
 
-.modal-form-input:focus-within {
-  outline: none;
-}
-
 .modal-form-input:focus {
   border-color: var(--input-focus-color);
 }
@@ -682,10 +680,6 @@ img {
 
 .modal-form-field .message-input:focus {
   border-color: var(--input-focus-color);
-}
-
-.modal-form-field .message-input:focus-within {
-  outline: none;
 }
 
 .policy {
