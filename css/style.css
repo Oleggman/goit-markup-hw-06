@@ -449,6 +449,10 @@ img {
   width: 264px;
 }
 
+.footer-socials {
+  margin-right: 80px;
+}
+
 .footer-socials-title {
   font-weight: 500;
   margin-bottom: 16px;
@@ -457,7 +461,6 @@ img {
 
 .footer .socials {
   gap: 16px;
-  margin-right: 80px;
 }
 
 .footer .socials-link:hover,
@@ -465,7 +468,7 @@ img {
   background-color: var(--footer-accent-color);
 }
 
-.subscription-area {
+.subscription-form {
   display: flex;
   gap: 24px;
 }
@@ -536,7 +539,7 @@ img {
   width: 408px;
   top: 50%;
   left: 50%;
-  padding: 0 24px;
+  padding: 72px 24px 24px;
 
   transform: translate(-50%, -50%) scale(1);
 
@@ -593,29 +596,20 @@ img {
 }
 
 .modal-form-title {
-  margin-top: 72px;
-
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-}
 
-.modal-form {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .modal-form-field {
   position: relative;
   display: block;
+  margin-bottom: 8px;
 
   line-height: 1.17;
-}
-
-.modal-form-field:not(:first-child) {
-  margin-top: 8px;
 }
 
 .modal-form-input {
@@ -638,6 +632,7 @@ img {
 }
 
 .modal-form-tag {
+  display: inline-block;
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -647,7 +642,7 @@ img {
 
 .modal-form-icon {
   position: absolute;
-  top: 26px;
+  top: 29px;
   left: 16px;
 
   fill: var(--secondary-color);
@@ -657,6 +652,10 @@ img {
 
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--input-focus-color);
+}
+
+.modal-form-field.comment {
+  margin-bottom: 16px;
 }
 
 .modal-form-field .message-input {
@@ -693,7 +692,7 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 16px;
+  margin-bottom: 24px;
 
   user-select: none;
 }
@@ -705,11 +704,9 @@ img {
 }
 
 .modal-submit-btn {
-  display: inline-block;
+  display: block;
   min-width: 169px;
   margin: 0 auto;
-  margin-top: 24px;
-  margin-bottom: 24px;
   padding: 16px 32px;
 
   background: var(--main-bg-btn-cl);
@@ -742,6 +739,10 @@ img {
 
 .modal .policy-checkbox:checked + .modal-custom-checkbox > .unchecked {
   opacity: 0;
+}
+
+.privacy-policy {
+  color: var(--input-focus-color);
 }
 
 /**
